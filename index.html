@@ -1,204 +1,162 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Athithya Baddela, aspiring developer and technology enthusiast.">
 
-    <title>Athithya Baddela | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>ATHITHYA BADDELA | Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- Background -->
+    <div class="background-glow"></div>
+    <div class="particles" id="particles"></div>
 
+    <!-- Navigation -->
     <header>
         <nav class="navbar">
-            <a href="#home" class="logo">AB<span>.</span></a>
+            <a href="#home" class="logo">A<span>.</span>B</a>
 
-            <ul class="nav-links" id="navLinks">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="contact-btn">Contact Me</a></li>
             </ul>
-
-            <a href="#contact" class="nav-button">Let's Connect ↗</a>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-                ☰
-            </button>
         </nav>
     </header>
 
 
-    <!-- HOME SECTION -->
+    <!-- HOME -->
+    <section class="hero section" id="home">
 
-    <section id="home" class="hero">
+        <div class="hero-content reveal">
 
-        <div class="hero-content">
-
-            <p class="eyebrow">
+            <p class="intro-tag">
                 <span class="status-dot"></span>
-                FIRST YEAR STUDENT | TECHNOLOGY ENTHUSIAST
+                WELCOME TO MY PORTFOLIO
             </p>
 
             <h1>
-                Hi, I'm <br>
-                <span>Athithya</span> Baddela.
+                ATHITHYA<br>
+                <span>BADDELA.</span>
             </h1>
 
-            <h2>Exploring Technology. Building Possibilities.</h2>
+            <h2>
+                I'm a <span id="typing-text"></span><span class="cursor">|</span>
+            </h2>
 
             <p class="hero-description">
-                A curious learner passionate about Generative AI,
-                Robotics, and emerging technologies. Currently building
-                my technical foundation and exploring innovative ideas.
+                Exploring technology, building ideas and creating
+                meaningful digital experiences through code.
             </p>
 
             <div class="hero-buttons">
-                <a href="#projects" class="primary-btn">
-                    Explore My Work ↗
-                </a>
-
-                <a href="#contact" class="secondary-btn">
-                    Get In Touch
-                </a>
+                <a href="#projects" class="primary-btn">Explore My Work ↗</a>
+                <a href="#contact" class="secondary-btn">Let's Connect</a>
             </div>
 
             <div class="social-links">
-                <a href="https://github.com/baddelaathithya"
-                   target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://github.com/baddelaathithya" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 
-                <a href="https://www.linkedin.com/in/athithya-baddela-506631439/"
-                   target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                <a href="https://www.linkedin.com/in/athithya-baddela-506631439/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
             </div>
 
         </div>
 
-        <div class="hero-visual">
+        <div class="hero-visual reveal">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
 
-            <div class="visual-card">
-
-                <div class="code-header">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <div class="code-content">
-                    <p><span class="purple">class</span> <span class="blue">Developer</span>:</p>
-
-                    <p class="indent">
-                        name = <span class="green">"Athithya"</span>
-                    </p>
-
-                    <p class="indent">
-                        skills = [
-                    </p>
-
-                    <p class="indent2 green">"Python",</p>
-                    <p class="indent2 green">"HTML",</p>
-                    <p class="indent2 green">"CSS"</p>
-
-                    <p class="indent">]</p>
-
-                    <p class="indent">
-                        interests = <span class="green">"AI & Robotics"</span>
-                    </p>
-
-                    <br>
-
-                    <p>
-                        <span class="purple">print</span>
-                        (<span class="green">"Keep Learning!"</span>)
-                    </p>
-                </div>
-
+            <div class="profile-circle">
+                <div class="profile-initials">AB</div>
+                <p>CREATIVE MIND<br>CURIOUS SOUL</p>
             </div>
 
-            <div class="floating-tag tag-one">✦ Artificial Intelligence</div>
-            <div class="floating-tag tag-two">⌘ Creative Thinking</div>
-
+            <div class="floating-card card-one">✦ Innovation</div>
+            <div class="floating-card card-two">⌘ Creativity</div>
+            <div class="floating-card card-three">✧ Technology</div>
         </div>
+
+        <a href="#about" class="scroll-indicator">SCROLL TO EXPLORE ↓</a>
 
     </section>
 
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
 
-    <section id="about" class="section">
-
-        <div class="section-heading">
-            <p class="section-label">GET TO KNOW ME</p>
-            <h2>About <span>Me</span></h2>
+        <div class="section-heading reveal">
+            <p class="section-label">01 / GET TO KNOW ME</p>
+            <h2>About <span>Me.</span></h2>
         </div>
 
         <div class="about-container">
 
-            <div class="about-text">
-                <h3>Curiosity drives innovation.</h3>
+            <div class="about-card reveal">
+                <div class="about-number">01</div>
+                <h3>A Little Introduction</h3>
 
                 <p>
-                    I'm Athithya Baddela, a first-year student at Joy
-                    University, pursuing my academic journey at the
-                    School of Computational Intelligence (SOCI).
-                </p>
-
-                <p>
-                    I'm interested in understanding how technology
-                    works and how it can solve real-world problems.
-                    My curiosity lies particularly in Generative AI,
-                    Robotics, and intelligent systems.
-                </p>
-
-                <p>
-                    As a beginner in the technology space, I'm focused
-                    on strengthening my programming fundamentals,
-                    experimenting with new technologies, and turning
-                    ideas into practical solutions.
+                    Hello! I'm <strong>Athithya Baddela</strong>,
+                    a student passionate about technology,
+                    programming and creative problem-solving.
+                    I enjoy exploring new concepts and turning
+                    ideas into practical digital solutions.
                 </p>
             </div>
 
-            <div class="about-details">
+            <div class="about-card reveal">
+                <div class="about-number">02</div>
+                <h3>Education</h3>
 
-                <div class="detail-card">
-                    <span>🎓</span>
-                    <div>
-                        <h4>Education</h4>
-                        <p>First Year Student</p>
-                        <small>Joy University</small>
-                    </div>
-                </div>
+                <p>
+                    Currently pursuing:
+                    <strong>[Your Degree / Course]</strong>
+                    <br><br>
+                    Institution: <strong>[Your College]</strong>
+                    <br>
+                    Academic Year: <strong>[Your Year]</strong>
+                </p>
+            </div>
 
-                <div class="detail-card">
-                    <span>🏛️</span>
-                    <div>
-                        <h4>Department</h4>
-                        <p>School of Computational Intelligence</p>
-                        <small>SOCI</small>
-                    </div>
-                </div>
+            <div class="about-card reveal">
+                <div class="about-number">03</div>
+                <h3>My Interests</h3>
 
-                <div class="detail-card">
-                    <span>🔭</span>
-                    <div>
-                        <h4>Exploring</h4>
-                        <p>Artificial Intelligence & Robotics</p>
-                        <small>Emerging Technologies</small>
-                    </div>
-                </div>
+                <p>
+                    Web Development · Artificial Intelligence ·
+                    Programming · Technology · Creative Design ·
+                    Problem Solving
+                </p>
+            </div>
 
+            <div class="about-card reveal">
+                <div class="about-number">04</div>
+                <h3>Future Goals</h3>
+
+                <p>
+                    My goal is to strengthen my technical foundation,
+                    develop innovative projects, explore emerging
+                    technologies and grow into a skilled technology
+                    professional.
+                </p>
             </div>
 
         </div>
@@ -206,131 +164,190 @@
     </section>
 
 
-    <!-- SKILLS SECTION -->
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
 
-    <section id="skills" class="section skills-section">
-
-        <div class="section-heading">
-            <p class="section-label">WHAT I KNOW</p>
-            <h2>My <span>Skills</span></h2>
-            <p class="heading-description">
-                Technologies and tools I'm learning and developing my
-                expertise in.
-            </p>
+        <div class="section-heading reveal">
+            <p class="section-label">02 / WHAT I KNOW</p>
+            <h2>My <span>Skills.</span></h2>
         </div>
 
-        <div class="skills-grid">
+        <div class="skills-container">
 
-            <div class="skill-card">
-                <div class="skill-icon">🐍</div>
-                <h3>Python</h3>
-                <p>Programming fundamentals and problem solving.</p>
-                <span>Programming Language</span>
-            </div>
+            <div class="skill-card reveal">
+                <div class="skill-icon">⌨</div>
+                <h3>Programming</h3>
 
-            <div class="skill-card">
-                <div class="skill-icon">🌐</div>
-                <h3>HTML</h3>
-                <p>Building structured and accessible web pages.</p>
-                <span>Web Development</span>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">🎨</div>
-                <h3>CSS</h3>
-                <p>Styling and designing responsive interfaces.</p>
-                <span>Web Development</span>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">🧠</div>
-                <h3>Generative AI</h3>
-                <p>Exploring AI tools, applications and workflows.</p>
-                <span>Area of Interest</span>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">🤖</div>
-                <h3>Robotics</h3>
-                <p>Learning about intelligent machines and automation.</p>
-                <span>Area of Interest</span>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">💡</div>
-                <h3>Creative Thinking</h3>
-                <p>Exploring ideas and approaching problems creatively.</p>
-                <span>Personal Skill</span>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS SECTION -->
-
-    <section id="projects" class="section">
-
-        <div class="section-heading">
-            <p class="section-label">MY WORK</p>
-            <h2>Projects & <span>Explorations</span></h2>
-            <p class="heading-description">
-                Ideas, experiments and technologies I'm exploring.
-            </p>
-        </div>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-
-                <div class="project-top">
-                    <span class="project-number">01</span>
-                    <span class="project-icon">✧</span>
-                </div>
-
-                <h3>AI-Based Workflows & Chatbots</h3>
-
-                <p>
-                    Exploring the potential of Generative AI to create
-                    intelligent conversational systems and automate
-                    everyday workflows.
-                </p>
-
-                <div class="project-tags">
-                    <span>Generative AI</span>
+                <div class="skill-tags">
                     <span>Python</span>
-                    <span>Chatbots</span>
+                    <span>Java</span>
+                    <span>C</span>
                 </div>
-
-                <span class="project-status">Learning & Exploration</span>
-
             </div>
 
+            <div class="skill-card reveal">
+                <div class="skill-icon">✧</div>
+                <h3>Web Development</h3>
 
-            <div class="project-card">
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">◈</div>
+                <h3>Technical Tools</h3>
+
+                <div class="skill-tags">
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                    <span>[Other Tools]</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">✦</div>
+                <h3>Professional Skills</h3>
+
+                <div class="skill-tags">
+                    <span>Problem Solving</span>
+                    <span>Teamwork</span>
+                    <span>Communication</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+
+        <div class="section-heading reveal">
+            <p class="section-label">03 / WHAT I'VE BUILT</p>
+            <h2>Featured <span>Projects.</span></h2>
+            <p class="heading-description">
+                A collection of ideas transformed into working projects.
+            </p>
+        </div>
+
+        <div class="projects-container">
+
+            <!-- PROJECT 1 -->
+            <article class="project-card reveal">
 
                 <div class="project-top">
-                    <span class="project-number">02</span>
-                    <span class="project-icon">⌘</span>
+                    <span class="project-category">01 / ACADEMIC PROJECT</span>
+                    <span class="project-arrow">↗</span>
                 </div>
 
-                <h3>IoT & Smart Technology Exploration</h3>
+                <div class="project-visual visual-one">
+                    <span>01</span>
+                </div>
+
+                <h3>[Project One Name]</h3>
 
                 <p>
-                    Exploring the fundamentals of Internet of Things
-                    through workshops and learning experiences,
-                    with an interest in connected devices and smart systems.
+                    [Write a short description explaining what
+                    this project does, the problem it addresses
+                    and the technologies used.]
                 </p>
 
                 <div class="project-tags">
-                    <span>IoT</span>
-                    <span>Smart Systems</span>
-                    <span>Technology</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
                 </div>
 
-                <span class="project-status">Workshop Exploration</span>
+                <a href="#" class="project-link">View Project ↗</a>
 
+            </article>
+
+
+            <!-- PROJECT 2 -->
+            <article class="project-card reveal">
+
+                <div class="project-top">
+                    <span class="project-category">02 / PERSONAL PROJECT</span>
+                    <span class="project-arrow">↗</span>
+                </div>
+
+                <div class="project-visual visual-two">
+                    <span>02</span>
+                </div>
+
+                <h3>Aegis Voice</h3>
+
+                <p>
+                    A project focused on voice authenticity and
+                    responsible AI. Explore the project to learn
+                    more about its features and functionality.
+                </p>
+
+                <div class="project-tags">
+                    <span>AI</span>
+                    <span>Voice Technology</span>
+                    <span>Web Development</span>
+                </div>
+
+                <a href="https://aegis-voice-frontend-98w9.bolt.host/#features"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-link">
+                    Live Demo ↗
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section achievements-section" id="achievements">
+
+        <div class="section-heading reveal">
+            <p class="section-label">04 / MILESTONES</p>
+            <h2>My <span>Achievements.</span></h2>
+        </div>
+
+        <div class="achievement-container">
+
+            <div class="achievement-item reveal">
+                <div class="achievement-icon">✦</div>
+
+                <div>
+                    <h3>Certifications</h3>
+                    <p>
+                        [Add your completed courses and certifications.]
+                    </p>
+                </div>
+            </div>
+
+            <div class="achievement-item reveal">
+                <div class="achievement-icon">🏆</div>
+
+                <div>
+                    <h3>Awards & Recognition</h3>
+                    <p>
+                        [Add any awards or academic recognitions.]
+                    </p>
+                </div>
+            </div>
+
+            <div class="achievement-item reveal">
+                <div class="achievement-icon">✧</div>
+
+                <div>
+                    <h3>Participation</h3>
+                    <p>
+                        [Add hackathons, workshops, seminars or events.]
+                    </p>
+                </div>
             </div>
 
         </div>
@@ -338,85 +355,44 @@
     </section>
 
 
-    <!-- ACHIEVEMENTS SECTION -->
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
 
-    <section id="achievements" class="section achievements-section">
+        <div class="contact-content reveal">
 
-        <div class="section-heading">
-            <p class="section-label">MY JOURNEY</p>
-            <h2>Achievements & <span>Activities</span></h2>
-        </div>
+            <p class="section-label">05 / GET IN TOUCH</p>
 
-        <div class="achievement-card">
+            <h2>Let's Create<br>
+                Something <span>Great.</span>
+            </h2>
 
-            <div class="achievement-icon">⚡</div>
+            <p>
+                Have an interesting idea, opportunity or project?
+                Feel free to connect with me.
+            </p>
 
-            <div>
-                <h3>AI-Based Workflows & Chatbots</h3>
-                <p>
-                    Exploring practical applications of artificial
-                    intelligence and intelligent automation.
-                </p>
+            <a href="mailto:baddelathithya@gmail.com"
+               class="primary-btn">
+                Say Hello ↗
+            </a>
+
+            <div class="contact-details">
+
+                <a href="mailto:baddelathithya@gmail.com">
+                    baddelathithya@gmail.com
+                </a>
+
+                <a href="https://github.com/baddelaathithya"
+                   target="_blank" rel="noopener noreferrer">
+                    GitHub ↗
+                </a>
+
+                <a href="https://www.linkedin.com/in/athithya-baddela-506631439/"
+                   target="_blank" rel="noopener noreferrer">
+                    LinkedIn ↗
+                </a>
+
             </div>
-
-        </div>
-
-        <div class="achievement-card">
-
-            <div class="achievement-icon">🔌</div>
-
-            <div>
-                <h3>IoT Workshops</h3>
-                <p>
-                    Participating in technology-oriented learning
-                    experiences to understand connected devices
-                    and emerging innovations.
-                </p>
-            </div>
-
-        </div>
-
-        <p class="achievement-note">
-            More learning experiences, certifications and achievements
-            will be added as my academic journey progresses.
-        </p>
-
-    </section>
-
-
-    <!-- CONTACT SECTION -->
-
-    <section id="contact" class="section contact-section">
-
-        <div class="section-heading">
-            <p class="section-label">GET IN TOUCH</p>
-            <h2>Let's Connect<span>.</span></h2>
-        </div>
-
-        <p class="contact-description">
-            Interested in technology, AI, Robotics or creative ideas?
-            Feel free to connect with me.
-        </p>
-
-        <a href="mailto:baddelathithya@gmail.com" class="primary-btn">
-            Send Me an Email ↗
-        </a>
-
-        <div class="contact-links">
-
-            <a href="mailto:baddelathithya@gmail.com">
-                Email
-            </a>
-
-            <a href="https://github.com/baddelaathithya"
-               target="_blank" rel="noopener noreferrer">
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/in/athithya-baddela-506631439/"
-               target="_blank" rel="noopener noreferrer">
-                LinkedIn
-            </a>
 
         </div>
 
@@ -424,10 +400,9 @@
 
 
     <!-- FOOTER -->
-
     <footer>
-        <p>© 2026 Athithya Baddela. All rights reserved.</p>
-        <p>Designed with curiosity & creativity.</p>
+        <p>© 2026 ATHITHYA BADDELA. ALL RIGHTS RESERVED.</p>
+        <p>Designed with creativity & curiosity. ✦</p>
     </footer>
 
 
@@ -435,3 +410,4 @@
 
 </body>
 </html>
+```
