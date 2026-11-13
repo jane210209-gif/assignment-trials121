@@ -1,642 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Portfolio of Athithya Baddela, showcasing skills, projects and achievements.">
-
     <title>Athithya Baddela | Portfolio</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <!-- BACKGROUND -->
-    <div class="ambient ambient-one"></div>
-    <div class="ambient ambient-two"></div>
-
-
-    <!-- NAVBAR -->
+    <!-- NAVIGATION -->
     <header class="navbar">
+        <a href="#home" class="logo">AB<span>.</span></a>
 
-        <a href="#home" class="logo">
-            AB<span>.</span>
-        </a>
-
-        <button class="menu-toggle" id="menu-toggle"
-            aria-label="Toggle navigation" aria-expanded="false">
-            ☰
-        </button>
-
-        <nav id="nav-menu">
-
+        <nav class="nav-links" id="navLinks">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#achievements">Achievements</a>
-
-            <a href="#contact" class="nav-contact">
-                Let's Connect ↗
-            </a>
-
+            <a href="#contact" class="nav-contact">Let's Connect ↗</a>
         </nav>
 
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
     </header>
 
 
-    <!-- HOME SECTION -->
     <main>
 
-    <section class="hero section" id="home">
+        <!-- HOME -->
+        <section class="hero section" id="home">
 
-        <div class="hero-content reveal">
+            <div class="hero-content reveal">
 
-            <div class="eyebrow">
-                <span class="status-dot"></span>
-                WELCOME TO MY PORTFOLIO
-            </div>
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    B.TECH STUDENT · AI & TECHNOLOGY
+                </p>
 
-            <h1>
-                ATHITHYA<br>
-                <span class="italic-name">BADDELA.</span>
-            </h1>
+                <h1>
+                    ATHITHYA<br>
+                    <span>BADDELA</span>
+                </h1>
 
-            <p class="hero-subtitle">
-                Exploring technology.
-                <span>Creating possibilities.</span>
-            </p>
+                <p class="hero-description">
+                    Exploring the intersection of technology, creativity
+                    and innovation. Interested in building meaningful
+                    digital experiences through code, AI and IoT.
+                </p>
 
-            <p class="hero-description">
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work ↗
+                    </a>
 
-                Hello! I'm Athithya Baddela, a student passionate
-                about technology, programming and building
-                meaningful digital experiences.
+                    <a href="#contact" class="btn btn-outline">
+                        Get in Touch
+                    </a>
+                </div>
 
-            </p>
+                <div class="social-links">
+                    <a href="https://github.com/baddelaathithya" target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
 
-            <div class="hero-buttons">
-
-                <a href="#projects" class="primary-btn">
-                    Explore My Work ↗
-                </a>
-
-                <a href="#contact" class="secondary-btn">
-                    Get In Touch
-                </a>
-
-            </div>
-
-            <div class="hero-socials">
-
-                <a href="https://github.com/baddelaathithya"
-                    target="_blank" rel="noopener noreferrer">
-                    GitHub ↗
-                </a>
-
-                <a href="https://www.linkedin.com/in/athithya-baddela-506631439/"
-                    target="_blank" rel="noopener noreferrer">
-                    LinkedIn ↗
-                </a>
+                    <a href="https://www.linkedin.com/in/athithya-baddela-506631439/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+                </div>
 
             </div>
 
-        </div>
+
+            <div class="hero-visual reveal">
+
+                <div class="visual-circle">
+                    <div class="circle-inner">
+                        <span>AB</span>
+                        <p>BUILDING<br>THE FUTURE</p>
+                    </div>
+                </div>
+
+                <div class="floating-card card-one">
+                    <span class="mini-dot"></span>
+                    Python
+                </div>
+
+                <div class="floating-card card-two">
+                    AI & IoT
+                </div>
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+            </div>
+
+        </section>
 
 
-        <!-- HERO VISUAL -->
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
 
-        <div class="hero-visual reveal">
+            <div class="section-heading reveal">
+                <p class="section-label">01 / ABOUT ME</p>
+                <h2>A little about <span>my journey.</span></h2>
+            </div>
 
-            <div class="visual-ring ring-one"></div>
-            <div class="visual-ring ring-two"></div>
+            <div class="about-grid">
 
-            <div class="visual-center">
+                <div class="about-text reveal">
 
-                <span>AB</span>
+                    <p>
+                        I'm <strong>Athithya Baddela</strong>, a first-year
+                        B.Tech student at Joy University, passionate about
+                        exploring the world of technology.
+                    </p>
+
+                    <p>
+                        I'm currently developing my programming and
+                        problem-solving skills while exploring web
+                        development, Artificial Intelligence and the
+                        Internet of Things.
+                    </p>
+
+                    <p>
+                        My goal is to keep learning, experiment with
+                        ideas and gradually turn concepts into useful
+                        real-world projects.
+                    </p>
+
+                </div>
+
+
+                <div class="education-card reveal">
+
+                    <p class="card-label">CURRENT EDUCATION</p>
+
+                    <h3>Bachelor of Technology</h3>
+
+                    <p class="university">Joy University</p>
+
+                    <div class="education-details">
+                        <span>Year</span>
+                        <strong>1st Year</strong>
+                    </div>
+
+                    <div class="education-details">
+                        <span>Semester</span>
+                        <strong>1st Semester</strong>
+                    </div>
+
+                    <div class="education-details">
+                        <span>Focus</span>
+                        <strong>Technology & Innovation</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="section skills-section" id="skills">
+
+            <div class="section-heading reveal">
+                <p class="section-label">02 / MY SKILLS</p>
+                <h2>Things I'm <span>learning.</span></h2>
+                <p class="section-subtitle">
+                    Building my technical foundation, one skill at a time.
+                </p>
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+                    <span class="skill-number">01</span>
+                    <h3>Python</h3>
+                    <p>
+                        Learning programming fundamentals,
+                        logical thinking and problem-solving.
+                    </p>
+                    <span class="skill-tag">PROGRAMMING</span>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <span class="skill-number">02</span>
+                    <h3>HTML & CSS</h3>
+                    <p>
+                        Exploring website structure, styling
+                        and responsive web design.
+                    </p>
+                    <span class="skill-tag">WEB DEVELOPMENT</span>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <span class="skill-number">03</span>
+                    <h3>IoT</h3>
+                    <p>
+                        Interested in connected devices,
+                        smart systems and emerging technologies.
+                    </p>
+                    <span class="skill-tag">TECHNOLOGY</span>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <span class="skill-number">04</span>
+                    <h3>AI Workflows</h3>
+                    <p>
+                        Exploring AI-powered tools, workflows
+                        and practical applications.
+                    </p>
+                    <span class="skill-tag">ARTIFICIAL INTELLIGENCE</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="section projects-section" id="projects">
+
+            <div class="section-heading reveal">
+                <p class="section-label">03 / SELECTED WORK</p>
+                <h2>Ideas into <span>reality.</span></h2>
+                <p class="section-subtitle">
+                    A collection of projects and experiments.
+                </p>
+            </div>
+
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1 -->
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+                        <span class="project-number">PROJECT / 01</span>
+                        <span class="project-arrow">↗</span>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Project One</h3>
+
+                        <p>
+                            A space for showcasing my development
+                            experiments and practical applications
+                            as I continue learning technology.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Learning</span>
+                            <span>Development</span>
+                        </div>
+                    </div>
+
+                    <div class="project-bottom">
+                        <span>PROJECT DETAILS COMING SOON</span>
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+                <article class="project-card featured-project reveal">
+
+                    <div class="project-top">
+                        <span class="project-number">PROJECT / 02</span>
+                        <span class="featured-label">FEATURED</span>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Aegis Voice</h3>
+
+                        <p>
+                            An AI-focused project exploring voice
+                            authenticity and responsible technology,
+                            with an emphasis on creating safer digital
+                            communication experiences.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Artificial Intelligence</span>
+                            <span>Voice Technology</span>
+                            <span>Web Development</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-bottom">
+                        <a href="https://aegis-voice-frontend-98w9.bolt.host/#features"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            VIEW LIVE PROJECT ↗
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACHIEVEMENTS -->
+        <section class="section achievements-section" id="achievements">
+
+            <div class="section-heading reveal">
+                <p class="section-label">04 / MILESTONES</p>
+                <h2>Learning never <span>stops.</span></h2>
+            </div>
+
+
+            <div class="achievement-card reveal">
+
+                <div class="achievement-icon">✦</div>
+
+                <div>
+                    <h3>Currently Building My Foundation</h3>
+
+                    <p>
+                        Developing programming knowledge,
+                        exploring emerging technologies and
+                        working towards creating meaningful projects.
+                    </p>
+                </div>
+
+                <span class="achievement-status">IN PROGRESS</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+
+            <div class="contact-content reveal">
+
+                <p class="section-label">05 / CONTACT</p>
+
+                <h2>
+                    Have an idea?<br>
+                    <span>Let's connect.</span>
+                </h2>
 
                 <p>
-                    CURIOUS MIND<br>
-                    CREATIVE THINKER
+                    I'm always interested in learning,
+                    collaborating and exploring new ideas.
                 </p>
 
-            </div>
-
-            <div class="floating-label label-one">
-                ✦ INNOVATION
-            </div>
-
-            <div class="floating-label label-two">
-                &lt; CODE /&gt;
-            </div>
-
-        </div>
-
-        <a href="#about" class="scroll-down">
-            SCROLL TO EXPLORE ↓
-        </a>
-
-    </section>
-
-
-    <!-- ABOUT SECTION -->
-
-    <section class="section about-section" id="about">
-
-        <div class="section-heading reveal">
-
-            <p class="section-number">01 / ABOUT ME</p>
-
-            <h2>
-                A little about <span>myself.</span>
-            </h2>
-
-        </div>
-
-
-        <div class="about-layout">
-
-            <div class="about-intro reveal">
-
-                <p class="large-text">
-
-                    I believe in learning,
-                    experimenting and turning
-                    <span>ideas into reality.</span>
-
-                </p>
-
-                <p class="body-text">
-
-                    I'm Athithya Baddela, an enthusiastic student
-                    interested in exploring the world of technology.
-
-                    I enjoy learning new concepts, developing
-                    technical skills and working on projects
-                    that challenge my creativity and problem-solving
-                    abilities.
-
-                </p>
+                <a href="mailto:baddelathithya@gmail.com"
+                   class="btn btn-primary">
+                    Say Hello ↗
+                </a>
 
             </div>
 
 
-            <div class="about-details">
-
-                <div class="detail-card reveal">
-
-                    <span class="detail-number">01</span>
-
-                    <h3>Education</h3>
-
-                    <p>
-                        Currently pursuing
-                        <strong>[Degree / Course]</strong>
-                        at <strong>[College Name]</strong>.
-                    </p>
-
-                    <p>
-                        Academic Year: [Year]
-                    </p>
-
-                </div>
-
-
-                <div class="detail-card reveal">
-
-                    <span class="detail-number">02</span>
-
-                    <h3>Interests</h3>
-
-                    <p>
-                        Programming, Web Development,
-                        Artificial Intelligence, Technology
-                        and Creative Problem Solving.
-                    </p>
-
-                </div>
-
-
-                <div class="detail-card reveal">
-
-                    <span class="detail-number">03</span>
-
-                    <h3>Learning Goals</h3>
-
-                    <p>
-                        Strengthening my programming foundation,
-                        exploring emerging technologies and
-                        developing practical projects.
-                    </p>
-
-                </div>
-
-
-                <div class="detail-card reveal">
-
-                    <span class="detail-number">04</span>
-
-                    <h3>Career Aspirations</h3>
-
-                    <p>
-                        Aspiring to grow into a skilled
-                        technology professional and contribute
-                        to innovative solutions.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SKILLS SECTION -->
-
-    <section class="section skills-section" id="skills">
-
-        <div class="section-heading reveal">
-
-            <p class="section-number">02 / MY EXPERTISE</p>
-
-            <h2>
-                Skills & <span>technologies.</span>
-            </h2>
-
-            <p class="section-description">
-                Tools and abilities I'm learning and developing.
-            </p>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-
-            <div class="skill-card reveal">
-
-                <span class="skill-icon">&lt;/&gt;</span>
-
-                <h3>Programming</h3>
-
-                <p>Languages and programming fundamentals.</p>
-
-                <div class="tags">
-                    <span>[Language 1]</span>
-                    <span>[Language 2]</span>
-                    <span>[Language 3]</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card reveal">
-
-                <span class="skill-icon">◈</span>
-
-                <h3>Web Development</h3>
-
-                <p>Creating and designing digital experiences.</p>
-
-                <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card reveal">
-
-                <span class="skill-icon">⌘</span>
-
-                <h3>Technical Tools</h3>
-
-                <p>Tools used for development and collaboration.</p>
-
-                <div class="tags">
-                    <span>GitHub</span>
-                    <span>VS Code</span>
-                    <span>[Other Tools]</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card reveal">
-
-                <span class="skill-icon">✳</span>
-
-                <h3>Soft Skills</h3>
-
-                <p>Personal abilities that support effective work.</p>
-
-                <div class="tags">
-                    <span>Problem Solving</span>
-                    <span>Teamwork</span>
-                    <span>Communication</span>
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS SECTION -->
-
-    <section class="section projects-section" id="projects">
-
-        <div class="section-heading reveal">
-
-            <p class="section-number">03 / SELECTED WORK</p>
-
-            <h2>
-                Things I've <span>created.</span>
-            </h2>
-
-            <p class="section-description">
-                A showcase of academic and personal projects.
-            </p>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <!-- PROJECT ONE -->
-
-            <article class="project-card reveal">
-
-                <div class="project-image project-image-one">
-
-                    <span class="project-index">01</span>
-
-                    <span class="project-symbol">✳</span>
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <div class="project-meta">
-                        ACADEMIC / PERSONAL PROJECT
-                    </div>
-
-                    <h3>[Project One Name]</h3>
-
-                    <p>
-                        [Add a description of your first project.
-                        Explain its purpose, the problem it solves
-                        and how you developed it.]
-                    </p>
-
-                    <div class="tags">
-                        <span>[Technology 1]</span>
-                        <span>[Technology 2]</span>
-                    </div>
-
-                    <a href="#" class="project-link">
-                        Explore Project <span>↗</span>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT TWO -->
-
-            <article class="project-card reveal">
-
-                <div class="project-image project-image-two">
-
-                    <span class="project-index">02</span>
-
-                    <span class="project-symbol">◉</span>
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <div class="project-meta">
-                        PERSONAL PROJECT
-                    </div>
-
-                    <h3>Aegis Voice</h3>
-
-                    <p>
-                        A project focused on voice authenticity
-                        and responsible AI technology.
-
-                        Explore its features and functionality
-                        through the live demonstration.
-                    </p>
-
-                    <div class="tags">
-                        <span>AI</span>
-                        <span>Voice Technology</span>
-                        <span>Web Development</span>
-                    </div>
-
-                    <a href="https://aegis-voice-frontend-98w9.bolt.host/#features"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link">
-
-                        Live Demo <span>↗</span>
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- ACHIEVEMENTS SECTION -->
-
-    <section class="section achievements-section" id="achievements">
-
-        <div class="section-heading reveal">
-
-            <p class="section-number">04 / MILESTONES</p>
-
-            <h2>
-                Beyond the <span>classroom.</span>
-            </h2>
-
-        </div>
-
-
-        <div class="achievement-list">
-
-
-            <div class="achievement-card reveal">
-
-                <span class="achievement-index">01</span>
-
-                <div>
-
-                    <h3>Certifications</h3>
-
-                    <p>
-                        [Add completed courses and certifications.]
-                    </p>
-
-                </div>
-
-                <span class="achievement-arrow">↗</span>
-
-            </div>
-
-
-            <div class="achievement-card reveal">
-
-                <span class="achievement-index">02</span>
-
-                <div>
-
-                    <h3>Awards & Recognition</h3>
-
-                    <p>
-                        [Add awards and academic achievements.]
-                    </p>
-
-                </div>
-
-                <span class="achievement-arrow">↗</span>
-
-            </div>
-
-
-            <div class="achievement-card reveal">
-
-                <span class="achievement-index">03</span>
-
-                <div>
-
-                    <h3>Participation</h3>
-
-                    <p>
-                        [Add hackathons, workshops and other participation.]
-                    </p>
-
-                </div>
-
-                <span class="achievement-arrow">↗</span>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT SECTION -->
-
-    <section class="section contact-section" id="contact">
-
-        <div class="contact-container reveal">
-
-            <p class="section-number">05 / LET'S CONNECT</p>
-
-            <h2>
-                Have an idea?<br>
-                Let's make it <span>happen.</span>
-            </h2>
-
-            <p>
-                I'm always interested in learning,
-                connecting and exploring new opportunities.
-            </p>
-
-            <a href="mailto:baddelathithya@gmail.com"
-                class="primary-btn contact-button">
-
-                Get In Touch ↗
-
-            </a>
-
-
-            <div class="contact-links">
+            <div class="contact-links reveal">
 
                 <a href="mailto:baddelathithya@gmail.com">
-                    EMAIL
-                    <span>baddelathithya@gmail.com ↗</span>
+                    <span>Email</span>
+                    <strong>baddelathithya@gmail.com ↗</strong>
                 </a>
-
 
                 <a href="https://github.com/baddelaathithya"
-                    target="_blank" rel="noopener noreferrer">
-
-                    GITHUB
-                    <span>Explore Profile ↗</span>
-
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <span>GitHub</span>
+                    <strong>Explore GitHub ↗</strong>
                 </a>
 
-
                 <a href="https://www.linkedin.com/in/athithya-baddela-506631439/"
-                    target="_blank" rel="noopener noreferrer">
-
-                    LINKEDIN
-                    <span>Connect With Me ↗</span>
-
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <span>LinkedIn</span>
+                    <strong>Connect on LinkedIn ↗</strong>
                 </a>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
     </main>
 
 
     <!-- FOOTER -->
+    <footer class="footer">
 
-    <footer>
+        <a href="#home" class="logo">AB<span>.</span></a>
 
-        <a href="#home" class="footer-logo">AB.</a>
-
-        <p>
-            © 2026 ATHITHYA BADDELA. ALL RIGHTS RESERVED.
-        </p>
+        <p>Designed & built by Athithya Baddela.</p>
 
         <a href="#home">BACK TO TOP ↑</a>
 
     </footer>
 
 
-    <!-- JAVASCRIPT -->
-
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 
 </body>
-
 </html>
